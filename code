@@ -1,0 +1,364 @@
+<!-- ESTILOS Y FUENTES (Cargar en el documento) -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+    .bg-jav-red { background-color: #E53E3E; }
+    .text-jav-red { color: #E53E3E; }
+    .border-jav-red { border-color: #E53E3E; }
+    .bg-jav-dark { background-color: #1A202C; }
+    .hover-bg-jav-red:hover { background-color: #C53030; }
+    .whatsapp-btn { background-color: #25D366; }
+    .whatsapp-btn:hover { background-color: #128C7E; }
+</style>
+
+<!-- ENCABEZADO / NAVBAR -->
+<header class="bg-jav-dark text-white sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <!-- LOGO JAV S.A.S. -->
+            <div class="flex items-center">
+                <svg width="50" height="50" viewBox="0 0 100 100" class="mr-2">
+                    <path d="M 30 20 L 55 20 L 45 45 L 35 45 Z" fill="#E53E3E"/>
+                    <rect x="25" y="45" width="20" height="10" rx="2" fill="#E53E3E"/>
+                    <circle cx="65" cy="25" r="4" fill="#2D3748"/>
+                    <circle cx="75" cy="20" r="4" fill="#2D3748"/>
+                    <circle cx="85" cy="15" r="4" fill="#2D3748"/>
+                </svg>
+                <div>
+                    <span class="text-2xl font-black tracking-wider text-jav-red">JAV</span>
+                    <span class="text-2xl font-black tracking-wider text-white"> S.A.S.</span>
+                    <p class="text-xs text-gray-400 font-semibold uppercase tracking-widest -mt-1">Soluciones en Alistamientos y Pintura</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="hidden md:flex space-x-6 font-semibold">
+            <a href="#inicio" class="hover:text-jav-red transition">Inicio</a>
+            <a href="#servicios" class="hover:text-jav-red transition">Servicios</a>
+            <a href="#galeria" class="hover:text-jav-red transition">Galería / Antes y Después</a>
+            <a href="#ia-asistente" class="text-jav-red font-bold hover:underline">Asistente IA / Diseñador</a>
+            <a href="#contacto" class="hover:text-jav-red transition">Contacto</a>
+        </nav>
+
+        <a href="https://wa.me/573162473872?text=Hola,%20deseo%20solicitar%20una%20cotización%20de%20sus%20servicios" target="_blank" class="whatsapp-btn text-white px-4 py-2 rounded-lg font-bold flex items-center space-x-2 transition shadow">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span class="hidden sm:inline">WhatsApp</span>
+        </a>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="inicio" class="relative bg-jav-dark text-white py-20 px-4" style="background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
+    <div class="container mx-auto text-center max-w-4xl">
+        <span class="bg-jav-red text-white text-xs font-bold uppercase px-3 py-1 rounded-full inline-block mb-4">Servicio Técnico Profesional</span>
+        <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">JAV S.A.S.</h1>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-300 mb-6 uppercase">Soluciones en Alistamientos y Pintura</h2>
+        <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Especialistas en pintura y alistamiento de maquinaria amarilla, montacargas, vehículos, muros, estructuras e interiores. Venta de repuestos de todo tipo con cobertura nacional.
+        </p>
+
+        <!-- AVISO COBERTURA NACIONAL -->
+        <div class="bg-gray-800 bg-opacity-80 border-l-4 border-jav-red p-4 mb-8 rounded-r-lg inline-block text-left max-w-xl">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-truck-moving text-jav-red text-2xl"></i>
+                <p class="text-sm font-semibold text-gray-200">
+                    <strong class="text-white uppercase block">Cobertura a nivel nacional:</strong>
+                    Nuestros pintores y personal técnico especializado se desplazan a cualquier lugar del país para atender sus requerimientos en obra o sitio.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#contacto" class="bg-jav-red hover-bg-jav-red text-white font-bold py-3 px-8 rounded-lg shadow-lg text-center transition">Solicitar Cotización</a>
+            <a href="tel:3162473872" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg text-center transition flex items-center justify-center space-x-2">
+                <i class="fas fa-phone-alt"></i>
+                <span>316 247 3872</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE SERVICIOS -->
+<section id="servicios" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 uppercase">Nuestros Servicios</h2>
+            <div class="w-20 h-1 bg-jav-red mx-auto mt-2"></div>
+            <p class="text-gray-600 mt-4">Soluciones integrales de pintura industrial, automotriz y arquitectónica</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center relative">
+                    <img src="https://images.unsplash.com/photo-1579412690850-bd41cd0af397?auto=format&fit=crop&w=600&q=80" alt="Maquinaria Amarilla y Montacargas" class="w-full h-full object-cover">
+                    <span class="absolute top-2 right-2 bg-jav-red text-white text-xs font-bold px-2 py-1 rounded">Especialidad</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Maquinaria Amarilla y Montacargas</h3>
+                    <p class="text-gray-600 text-sm mb-4">Alistamiento, restauración, hojalatería y aplicación de pintura de alta resistencia (Poliuretano/Epóxico) para excavadoras, montacargas, grúas y maquinaria pesada.</p>
+                </div>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=600&q=80" alt="Pintura de Carros" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Vehículos y Carros</h3>
+                    <p class="text-gray-600 text-sm mb-4">Latonería, pintura general o por piezas, polichado, eliminación de rayones y recubrimientos interiores para vehículos particulares y comerciales.</p>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80" alt="Pintura de Muros y Estructuras" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Pintura de Muros y Fachadas</h3>
+                    <p class="text-gray-600 text-sm mb-4">Servicios profesionales para interiores, exteriores, locales comerciales, bodegas e instalaciones industriales. Pintores capacitados con desplazamiento nacional.</p>
+                </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80" alt="Repuestos" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Venta de Repuestos de Todo Tipo</h3>
+                    <p class="text-gray-600 text-sm mb-4">Suministro y consecución de repuestos multimarca para maquinaria industrial, automotriz y componentes técnicos.</p>
+                </div>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Reparación de Muros" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Mantenimiento de Muros y Estructuras</h3>
+                    <p class="text-gray-600 text-sm mb-4">Resane, frizo, estuco, impermeabilización y arreglo integral de paredes y muros en mal estado.</p>
+                </div>
+            </div>
+
+            <!-- Servicio 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+                <div class="h-48 bg-gray-300 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=600&q=80" alt="Demarcación Industrial" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900">Demarcación y Pintura Industrial</h3>
+                    <p class="text-gray-600 text-sm mb-4">Señalización de vías internas, bodegas, demarcación de seguridad para montacargas y zonas operativas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERÍA DE PROYECTOS / ANTES Y DESPUÉS -->
+<section id="galeria" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 uppercase">Proyectos Destacados (Antes y Después)</h2>
+            <div class="w-20 h-1 bg-jav-red mx-auto mt-2"></div>
+            <p class="text-gray-600 mt-4">Evidencia de nuestros trabajos de alistamiento, restauración y pintura en montacargas y maquinaria</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Proyecto 1: Montacargas Toyota -->
+            <div class="bg-gray-50 border rounded-lg overflow-hidden shadow">
+                <div class="p-4 bg-jav-dark text-white font-bold flex justify-between items-center">
+                    <span>Montacargas Toyota</span>
+                    <span class="text-xs bg-jav-red px-2 py-1 rounded">Alistamiento & Pintura</span>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-2">
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-red-600 mb-1">ANTES</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Limpia/Superficie deteriorada por desgaste operativo</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-green-600 mb-1">DESPUÉS</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Acabado final pintura poliuretano naranja/gris corporativo</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-4 text-xs text-gray-600">Restauración estructural, eliminación de corrosión, aplicación de base anticorrosiva y pintura industrial.</p>
+            </div>
+
+            <!-- Proyecto 2: Excavadora Kobelco -->
+            <div class="bg-gray-50 border rounded-lg overflow-hidden shadow">
+                <div class="p-4 bg-jav-dark text-white font-bold flex justify-between items-center">
+                    <span>Maquinaria Kobelco</span>
+                    <span class="text-xs bg-jav-red px-2 py-1 rounded">Imagen Corporativa</span>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-2">
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-red-600 mb-1">ANTES</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Pintura desgastada y pérdida de logos originales</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-green-600 mb-1">DESPUÉS</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Alistamiento completo y demarcación de marca</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-4 text-xs text-gray-600">Desmonte de piezas, lijado industrial, masillado de fisuras y marcación técnica de la maquinaria.</p>
+            </div>
+
+            <!-- Proyecto 3: Interior de Vehículo / Van -->
+            <div class="bg-gray-50 border rounded-lg overflow-hidden shadow">
+                <div class="p-4 bg-jav-dark text-white font-bold flex justify-between items-center">
+                    <span>Adecuación Vehículos</span>
+                    <span class="text-xs bg-jav-red px-2 py-1 rounded">Recubrimiento Interior</span>
+                </div>
+                <div class="grid grid-cols-2 gap-1 p-2">
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-red-600 mb-1">ANTES</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Piso y lámina con desgaste y rasguños</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <span class="block text-xs font-bold text-green-600 mb-1">DESPUÉS</span>
+                        <div class="bg-gray-200 h-48 rounded flex items-center justify-center text-xs text-gray-500 overflow-hidden">
+                            <span class="p-2">Recubrimiento de alta resistencia e higiene</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="p-4 text-xs text-gray-600">Acondicionamiento de furgones y vehículos comerciales para uso rudo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN DE CONTACTO Y COTIZACIÓN -->
+<section id="contacto" class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Información Directa -->
+            <div>
+                <h2 class="text-3xl font-extrabold uppercase mb-6">Contáctenos</h2>
+                <div class="w-16 h-1 bg-jav-red mb-6"></div>
+                <p class="text-gray-300 mb-8">
+                    En <strong>JAV S.A.S.</strong> estamos listos para atender sus requerimientos en cualquier parte de Colombia. Solicite su cotización sin compromiso.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-jav-red p-3 rounded-lg text-white">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-400 text-xs uppercase">Teléfono Directo / Celular</h4>
+                            <a href="tel:3162473872" class="text-xl font-bold hover:text-jav-red transition">316 247 3872</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-jav-red p-3 rounded-lg text-white">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-400 text-xs uppercase">Atención por WhatsApp</h4>
+                            <a href="https://wa.me/573162473872" target="_blank" class="text-xl font-bold text-green-400 hover:underline">Escribir al 316 247 3872</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-jav-red p-3 rounded-lg text-white">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-400 text-xs uppercase">Correo Electrónico</h4>
+                            <a href="mailto:pintujav@gmail.com" class="text-xl font-bold hover:text-jav-red transition">pintujav@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-jav-red p-3 rounded-lg text-white">
+                            <i class="fas fa-map-marked-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-400 text-xs uppercase">Cobertura de Servicio</h4>
+                            <p class="text-lg font-semibold">Atención y desplazamiento a nivel nacional en Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Cotización Directo -->
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h3 class="text-2xl font-bold mb-4 uppercase">Solicitar Cotización</h3>
+                <form id="form-cotizacion" onsubmit="enviarCotizacion(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Nombre o Empresa</label>
+                        <input type="text" id="nombre" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-jav-red focus:outline-none" placeholder="Ej: Constructora XYZ / Juan Pérez">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Teléfono / Celular</label>
+                        <input type="tel" id="telefono" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-jav-red focus:outline-none" placeholder="Ej: 316 247 3872">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Servicio Requerido</label>
+                        <select id="servicio" class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-jav-red focus:outline-none">
+                            <option value="Maquinaria Amarilla y Montacargas">Pintura y Alistamiento de Maquinaria / Montacargas</option>
+                            <option value="Carros y Vehículos">Latonería y Pintura de Carros</option>
+                            <option value="Pintura de Muros / Fachadas">Pintura de Muros y Fachadas</option>
+                            <option value="Repuestos">Solicitud de Repuestos</option>
+                            <option value="Arreglo de Muros">Reparación y Arreglo de Muros</option>
+                            <option value="Otro">Otro servicio</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-gray-300 mb-1">Detalle del Requerimiento y Ubicación</label>
+                        <textarea id="mensaje" rows="4" required class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:border-jav-red focus:outline-none" placeholder="Describa la máquina o trabajo a realizar y en qué ciudad se requiere el servicio..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-jav-red hover-bg-jav-red text-white font-bold py-3 rounded transition flex items-center justify-center space-x-2">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>Enviar Cotización por WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PIE DE PÁGINA / FOOTER -->
+<footer class="bg-black text-gray-500 py-6 border-t border-gray-800 text-center text-sm">
+    <div class="container mx-auto px-4">
+        <p class="font-bold text-gray-300 mb-1">JAV S.A.S. - Soluciones en Alistamientos y Pintura</p>
+        <p>Teléfono: 316 247 3872 | Correo: pintujav@gmail.com</p>
+        <p class="text-xs text-gray-600 mt-3">&copy; 2026 JAV S.A.S. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://wa.me/573162473872?text=Hola%20JAV%20S.A.S.,%20requiero%20información%20sobre%20sus%20servicios" target="_blank" class="fixed bottom-6 right-6 whatsapp-btn text-white p-4 rounded-full shadow-2xl z-50 text-2xl flex items-center justify-center hover:scale-110 transition duration-300">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- SCRIPT DE ENVÍO DE FORMULARIO -->
+<script>
+    function enviarCotizacion(e) {
+        e.preventDefault();
+        const nombre = document.getElementById('nombre').value;
+        const telefono = document.getElementById('telefono').value;
+        const servicio = document.getElementById('servicio').value;
+        const mensaje = document.getElementById('mensaje').value;
+
+        const texto = `*SOLICITUD DE COTIZACIÓN - JAV S.A.S.*%0A%0A*Cliente/Empresa:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Servicio:* ${servicio}%0A*Detalles:* ${mensaje}`;
+        window.open(`https://wa.me/573162473872?text=${texto}`, '_blank');
+    }
